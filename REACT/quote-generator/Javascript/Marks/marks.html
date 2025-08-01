@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marks Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .grade {
+            font-size: 24px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="grade" id="result"></div>
+
+    <script>
+        let marks = 90;
+        let grade = "";
+
+        if (marks >= 45 && marks < 70) {
+            grade = "Grade C";
+        } else if (marks >= 70 && marks < 85) {
+            grade = "Grade B";
+        } else if (marks >= 85) {
+            grade = "Grade A";
+        } else {
+            grade = "Fail";
+        }
+
+        document.getElementById("result").textContent = "Your Grade: " + grade;
+    </script>
+</body>
+</html>
